@@ -1,5 +1,6 @@
 package com.example.asus.myapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -30,7 +31,8 @@ public class MainActivity extends AppCompatActivity {
         modem_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent i = new Intent(MainActivity.this, LoginActivity.class);
+                startActivity(i);
             }
 
         });
